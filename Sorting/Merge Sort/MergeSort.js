@@ -34,7 +34,7 @@ function merge(left, right) {
         }
     }
     // console.log(left, right)
-    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex)); // This line target to add the sorted remain array number into the result list
 }
 
 
