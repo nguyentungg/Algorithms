@@ -1,0 +1,6 @@
+.DS_Store
+.vscode/settings.json
+.vscode/tasks.json
+**.plist
+**.dSYM
+.vscode/
