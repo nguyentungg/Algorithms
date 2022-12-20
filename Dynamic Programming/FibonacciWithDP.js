@@ -28,6 +28,7 @@ function fibonacciMaster() { //O(n)
 function fibonacciMaster2(n) {
     let answer = [0, 1];
     for (let i = 2; i <= n; i++) {
+        // Simplest solution from the bottom and slowly work your way up higher and higher towards more complex problems.
         answer.push(answer[i - 2] + answer[i - 1]);
     }
     return answer.pop();
