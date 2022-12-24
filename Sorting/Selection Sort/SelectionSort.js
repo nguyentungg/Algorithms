@@ -17,3 +17,5 @@ function selectionSort(array) {
   }
   return array;
 }
+
+selectionSort(numbers)
