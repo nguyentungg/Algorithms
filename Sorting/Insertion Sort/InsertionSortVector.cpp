@@ -2,30 +2,47 @@
 //
 
 #include <iostream>
-#include<vector> 
+#include <vector>
 
 using namespace std;
-class InsertionSortWithStl {
+class InsertionSortWithStl
+{
 
 public:
 
-    void InsertionSortStl(vector<int>& vec)
+    void InsertionSort(std::vector<int> &vec)
+    {
+        for (std::size_t j = 1; j < vec.size(); j++)
+        {
+            int key = vec[j];
+            int i = j - 1;
+
+            while (i >= 0 && vec[i] > key)
+            {
+                vec[i + 1] = vec[i];
+                i--;
+            }
+            vec[i + 1] = key;
+        }
+    }
+
+    void InsertionSortStl(vector<int> &vec)
     {
         for (auto it = vec.begin(); it != vec.end(); it++)
         {
             // Search
-            //upper_bound returns an iterator pointing to the first element in the range[first, last) whose value is larger 
-            //than the x.Here x is* it.
+            // upper_bound returns an iterator pointing to the first element in the range[first, last) whose value is larger
+            // than the x.Here x is* it.
             auto const insertion_point = upper_bound(vec.begin(), it, *it);
 
-            //insert
-            //rotate perfoms left rotation.It swaps the elements in the range[first, last), in such a way that the element pointed 
-            //by middle becomes the new first elementand element pointed by middle - 1 becomes last element.
+            // insert
+            // rotate perfoms left rotation.It swaps the elements in the range[first, last), in such a way that the element pointed
+            // by middle becomes the new first elementand element pointed by middle - 1 becomes last element.
             rotate(insertion_point, it, it + 1);
         }
     }
 
-    void Print(vector<int>& vec)
+    void Print(vector<int> &vec)
     {
         for (unsigned i = 0; i < vec.size(); i++)
         {
@@ -38,9 +55,9 @@ public:
 int main()
 {
     InsertionSortWithStl insort;
-    int arr[] = { 5, 2, 4, 13, 12, 6, 1, 3 };
-    //vector<int> arr = { 5, 2, 4, 13, 12, 6, 1, 3 };
-    vector<int> vecarr(begin(arr),end(arr));
+    int arr[] = {5, 2, 4, 13, 12, 6, 1, 3};
+    // vector<int> arr = { 5, 2, 4, 13, 12, 6, 1, 3 };
+    vector<int> vecarr(begin(arr), end(arr));
     insort.InsertionSortStl(vecarr);
     insort.Print(vecarr);
 
