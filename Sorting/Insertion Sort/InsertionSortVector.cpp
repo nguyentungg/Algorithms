@@ -9,10 +9,9 @@ class InsertionSortWithStl
 {
 
 public:
-
-    void InsertionSort(std::vector<int> &vec)
+    void InsertionSort(vector<int> &vec)
     {
-        for (std::size_t j = 1; j < vec.size(); j++)
+        for (size_t j = 1; j < vec.size(); j++)
         {
             int key = vec[j];
             int i = j - 1;
@@ -44,6 +43,8 @@ public:
 
     void Print(vector<int> &vec)
     {
+        // for (auto a : fruits)
+        //     std::cout << a << " ";
         for (unsigned i = 0; i < vec.size(); i++)
         {
             cout << vec[i] << " ";
