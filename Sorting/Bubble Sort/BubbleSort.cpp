@@ -1,5 +1,7 @@
 // C++ program for implementation
 // of Bubble sort
+// Complexity: O(n^2)
+// Usage: Simple and intuitive, but inefficient for large data sets.
 #include <iostream>
 
 using namespace std;
