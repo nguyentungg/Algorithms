@@ -1,4 +1,5 @@
 # Sorting
+![image](https://github.com/nguyentungg/Algorithms/assets/16759685/18e01187-74a2-4f70-88ba-ce917bdd2e4c)
 
 ## Types of Algorithms:
 There are several types of algorithms available. Some important algorithms are:
@@ -17,9 +18,9 @@ There are several types of algorithms available. Some important algorithms are:
 
 7. Divide and Conquer Algorithm: This algorithm breaks a problem into sub-problems, solves a single sub-problem and merges the solutions together to get the final solution. It consists of the following three steps:
 
-    Divide
-    Solve
-    Combine
+    - Divide
+    - Solve
+    - Combine
 
 8. Greedy Algorithm: In this type of algorithm the solution is built part by part. The solution of the next part is built based on the immediate benefit of the next part. The one solution giving the most benefit will be chosen as the solution for the next part.
 
@@ -35,6 +36,42 @@ There are several types of algorithms available. Some important algorithms are:
 
 - Theta notation (Θ): This notation provides both an upper and lowerbound on the growth rate of an algorithm’s running time or space usage. It represents <u>the average-case</u> scenario, i.e., the amount of time orspace an algorithm typically needs to solve a problem. For example, ifan algorithm’s running time is Θ(n), then it means that the runningtime of the algorithm increases linearly with the input size n.
 
+## List categorizing the sorting algorithms based on their uses, similarities, and differences:
+1. Simple Comparison-Based Sorts:
+    - Selection Sort
+    - Bubble Sort
+    - Insertion Sort
+    - Gnome Sort
+    Purpose: These sorting algorithms are simple to implement and are suitable for small data sets or when simplicity is prioritized over efficiency.
+2. Efficient Comparison-Based Sorts:
+    - Merge Sort
+    - Quick Sort
+    - Heap Sort
+    - TimSort
+    - Strand Sort
+    - Comb Sort
+    - Cocktail Sort
+    - Stooge Sort
+    - Tag Sort (Index Sort)
+    - Tree Sort
+    - Odd-Even Sort / Brick Sort
+    - 3-way Merge Sort
+    Purpose: These sorting algorithms provide efficient sorting solutions with varying trade-offs between time complexity, space complexity, stability, and simplicity.
+3. Integer-Based Sorts:
+    - Counting Sort
+    - Radix Sort
+    - Bucket Sort
+    - Pigeonhole Sort
+    Purpose: These sorting algorithms are specialized for sorting non-negative integers or elements with fixed-size integer keys. They can achieve linear time complexity or improve efficiency for specific data distributions.
+4. Unique and Unconventional Sorts:
+    - BogoSort or Permutation Sort
+    - Sleep Sort – The King of Laziness
+    Purpose: These sorting algorithms are not practical or efficient but serve as examples of unconventional sorting approaches or for entertainment purposes.
+5. Specific Use-Cases:
+    - Pancake Sorting: Sorting an array by flipping elements using only one operation.
+    - Structure Sorting in C++: Sorting arrays of structures based on specific structure members.
+    Purpose: These sorting algorithms address specific use-cases or constraints, such as restricted operations or sorting complex data structures.
+    
 ## When to use
 1. Bubble Sort:
     - Description: Repeatedly swap adjacent elements if they are in the wrong order until the entire array is sorted.
@@ -1424,42 +1461,6 @@ There are several types of algorithms available. Some important algorithms are:
     - Description: 3-way Merge Sort is an extension of Merge Sort that divides the array into three parts and recursively sorts each part before merging them.
     - Purpose: It is designed to handle arrays with duplicate elements efficiently and provides a more balanced merge process.
     - Usage: It is particularly useful when dealing with arrays containing many duplicate elements or when stability is crucial in the sorting process.
-
-## List categorizing the sorting algorithms based on their uses, similarities, and differences:
-1. Simple Comparison-Based Sorts:
-    - Selection Sort
-    - Bubble Sort
-    - Insertion Sort
-    - Gnome Sort
-    Purpose: These sorting algorithms are simple to implement and are suitable for small data sets or when simplicity is prioritized over efficiency.
-2. Efficient Comparison-Based Sorts:
-    - Merge Sort
-    - Quick Sort
-    - Heap Sort
-    - TimSort
-    - Strand Sort
-    - Comb Sort
-    - Cocktail Sort
-    - Stooge Sort
-    - Tag Sort (Index Sort)
-    - Tree Sort
-    - Odd-Even Sort / Brick Sort
-    - 3-way Merge Sort
-    Purpose: These sorting algorithms provide efficient sorting solutions with varying trade-offs between time complexity, space complexity, stability, and simplicity.
-3. Integer-Based Sorts:
-    - Counting Sort
-    - Radix Sort
-    - Bucket Sort
-    - Pigeonhole Sort
-    Purpose: These sorting algorithms are specialized for sorting non-negative integers or elements with fixed-size integer keys. They can achieve linear time complexity or improve efficiency for specific data distributions.
-4. Unique and Unconventional Sorts:
-    - BogoSort or Permutation Sort
-    - Sleep Sort – The King of Laziness
-    Purpose: These sorting algorithms are not practical or efficient but serve as examples of unconventional sorting approaches or for entertainment purposes.
-5. Specific Use-Cases:
-    - Pancake Sorting: Sorting an array by flipping elements using only one operation.
-    - Structure Sorting in C++: Sorting arrays of structures based on specific structure members.
-    Purpose: These sorting algorithms address specific use-cases or constraints, such as restricted operations or sorting complex data structures.
 
 ## List of sorting algorithms categorized based on their utilization of other algorithms:
 
